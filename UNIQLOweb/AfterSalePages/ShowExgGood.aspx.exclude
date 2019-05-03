@@ -1,0 +1,29 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ShowExgGood.aspx.cs" Inherits="AfterSalePages_ShowExgGood" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:GridView ID="GV_sexg" runat="server" AutoGenerateColumns="false">
+                                    <Columns> 
+                                <asp:BoundField DataField="ExgID" HeaderText="换货编号"  />
+                                <asp:BoundField DataField="SaleTime" HeaderText="销售时间"  />
+                                <asp:BoundField DataField="ExgTime" HeaderText="换货时间" />
+                                <asp:BoundField DataField="ExgGoodID" HeaderText="换货商品编号"  />
+                                <asp:BoundField DataField="ExgGoodName" HeaderText="换货商品名称" />
+                                <asp:BoundField DataField="ExgGoodNum" HeaderText="换货商品数量" />
+                                <asp:BoundField DataField="Operator" HeaderText="操作人" />
+                            </Columns>
+        </asp:GridView>
+    
+    </div>
+    </form>
+</body>
+</html>
